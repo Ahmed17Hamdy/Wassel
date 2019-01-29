@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WasselApp.PopUps.Map1">
+    <pages:PopupPage.Content>
+      <StackLayout Margin="12" Padding="24" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Center" >
+          <Label Text="Hello Xamarin.Forms!" />
+      </StackLayout>
+  </pages:PopupPage.Content>
+</pages:PopupPage>

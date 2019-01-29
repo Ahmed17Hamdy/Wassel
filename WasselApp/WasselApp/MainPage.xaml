@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WasselApp"
+             x:Class="WasselApp.MainPage" Title="الرئيسية" >
+   
+    <ContentPage.ToolbarItems>
+        <ToolbarItem/>
+    </ContentPage.ToolbarItems>
+    <Grid  >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Grid.Row="0" Grid.Column="0">
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="أغذية ومشروبات" />
+
+        </StackLayout>
+        <BoxView BackgroundColor="Blue" Opacity="0.5" Grid.ColumnSpan="2" VerticalOptions="End" HeightRequest="1" WidthRequest="1"/>
+        <StackLayout Grid.Row="0" Grid.Column="1" >
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="طرود توصيل" />
+
+        </StackLayout>
+        <BoxView BackgroundColor="Blue" Opacity="0.5" Grid.Row="0" Grid.RowSpan="3" HorizontalOptions="End" HeightRequest="1" WidthRequest="1"/>
+        <StackLayout Grid.Row="1" Grid.Column="0">
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="عن التطبيق" />
+        </StackLayout>
+        <BoxView BackgroundColor="Blue" Opacity="0.5" Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="End" HeightRequest="1" WidthRequest="1"/>
+
+
+            <StackLayout Grid.Row="1" Grid.Column="1">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </StackLayout.GestureRecognizers>
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="حاويات شحن" />
+        </StackLayout>
+        
+            <StackLayout Grid.Row="2" Grid.Column="0">
+                <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="إتصل بنا" />
+            </StackLayout>
+            <StackLayout Grid.Row="2" Grid.Column="1"  >
+                <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="أهدافنا" />
+            </StackLayout>
+
+
+    </Grid>
+  
+</ContentPage>

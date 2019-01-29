@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:customcontrols="clr-namespace:WasselApp.CustomControls"
+            
+             x:Class="WasselApp.Views.UserPanel">
+    
+    <ContentPage.Content>
+        <Grid Margin="10,10,10,10">
+
+
+            <StackLayout IsVisible="True">
+                <customcontrols:ImageEntry  Text="{Binding name}"   Image="smartphonecall" HorizontalTextAlignment="Center" Placeholder="الإسم" />
+                <customcontrols:ImageEntry Text="{Binding email}" Image="email" HorizontalTextAlignment="Center" Placeholder="البريد الإلكترونى" />
+                <customcontrols:ImageEntry Text="{Binding carnumber}"  Image="driverlicense"  HorizontalTextAlignment="Center" Placeholder="رقم السيارة"/>
+                <customcontrols:ImageEntry  Text="{Binding cartype}" Image="arrow" HorizontalTextAlignment="Center" Placeholder="نوع السيارة"/>
+                <customcontrols:ImageEntry Text="{Binding lat }" Image="placeholder"  HorizontalTextAlignment="Center" Placeholder="الموقع"/>
+                <customcontrols:ImageEntry Text="{Binding password}" Image="lock"  IsPassword="True" HorizontalTextAlignment="Center" Placeholder="كلمة المرور"/>
+                <customcontrols:ImageEntry Text="{Binding confirmpass}" Image="lock" IsPassword="True" HorizontalTextAlignment="Center" Placeholder="تأكيد كلمة المرور"/>
+                <Button BackgroundColor="Blue" BorderColor="Blue" Text="تسجيل" TextColor="White"
+                        BorderRadius="20"/>
+            </StackLayout>
+        <StackLayout IsVisible="False">
+                <Entry HorizontalTextAlignment="Center" Placeholder="الإسم" />
+                <Entry HorizontalTextAlignment="Center" Placeholder="البريد الإلكترونى" />
+                <Entry IsPassword="True" HorizontalTextAlignment="Center" Placeholder="كلمة المرور"/>
+                <Entry IsPassword="True" HorizontalTextAlignment="Center" Placeholder="تأكيد كلمة المرور"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
